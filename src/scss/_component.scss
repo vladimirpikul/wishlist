@@ -1,0 +1,180 @@
+// logo
+.logo{
+  .top-part{
+    font-weight: bold;
+    font-size: 26px;
+    color: $red;
+    position: relative;
+
+    span{
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      background-color: $red;
+      width: 10px;
+      height: 2px;
+      bottom: 2px;
+    }
+  }
+
+  .bottom-part{
+    font-size: 12px;
+    color: $lightBlack;
+    text-transform: uppercase;
+    letter-spacing: 0.9em;
+  }
+}
+
+// nav-bar
+.navbar-toggler:focus{
+  outline: none;
+}
+
+// user cart
+.cart{
+  border: 2px solid $lightBlack;
+  padding: 9px 15px;
+  position: relative;
+
+  .sum{
+    font-weight: bold;
+    font-size: 15px;
+    color: $lightBlack;
+    margin-left: 5px;
+  }
+
+  .count{
+    position: absolute;
+    color: white;
+    background-color: $black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 20px;
+    font-size: 11px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      border: 3px solid white;
+      border-radius: 50%;
+      left: -3px;
+      top: -3px;
+    }
+  }
+}
+
+// btn
+.btn{
+  padding: 8px 20px;
+  background-color: unset;
+  border-radius: unset;
+  font-size: 12px;
+  color: $lightBlack;
+  text-transform: uppercase;
+
+  &:focus{
+    box-shadow: none;
+  }
+
+  &.btn-default{
+    border: 2px solid $black;
+  }
+
+  &.btn-white{
+    border: 2px solid white;
+    color: white;
+  }
+}
+
+// pagination
+.pagination{
+  margin-top: 80px;
+
+  li{
+    text-align: center;
+
+    a{
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      color: $grey;
+      border: 2px solid $paginationBorder;
+
+      &:hover{
+        border-color: $lightBlack;
+        color: $red;
+      }
+    }
+
+    &.active{
+      a{
+        border-color: $lightBlack;
+        color: $red;
+      }
+    }
+
+    & + li{
+      margin-left: 7px;
+    }
+  }
+}
+
+// fontawesome icons
+.my-fa-chevron-down:before {
+  content: "\f078";
+}
+.my-fa-twitter:before {
+  content: "\f099";
+}
+.my-fa-facebook-f:before {
+  content: "\f39e";
+}
+.my-fa-linkedin-in:before {
+  content: "\f0e1";
+}
+.my-fa-google-plus-g:before {
+  content: "\f0d5";
+}
+.my-fa-pinterest-p:before {
+  content: "\f231";
+}
+.my-fa-youtube:before {
+  content: "\f167";
+}
+.my-fa-rss:before {
+  content: "\f09e";
+}
+.my-fa-envelope:before {
+  content: "\f0e0";
+}
+.my-fa-search:before {
+  content: "\f002";
+}
+
+// slider
+.store-features{
+  *:focus{
+    outline: none;
+  }
+  .slick-slide{
+    display: flex;
+    padding-left: 15px;
+
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+}
